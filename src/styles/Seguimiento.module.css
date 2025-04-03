@@ -1,0 +1,78 @@
+.parent {
+    display: grid;
+    grid-template-columns: auto 1fr; /* La barra lateral ocupa lo necesario, el resto el contenido */
+    height: 100vh; /* Ocupar toda la pantalla */
+}
+
+/* ✅ Barra lateral */
+.div1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 80px;
+    height: 100vh; /* La barra lateral ocupa toda la altura */
+    background-color: red;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    overflow: hidden;
+    transition: width 0.3s ease-in-out;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-start; /* Para que los botones inicien desde arriba */
+    padding-top: 60px; /* Espacio arriba */
+}
+
+.div1 button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.div1 button:hover {
+    background: rgba(255, 255, 0, 0.4);
+}
+
+.div1:hover {
+    width: 200px; /* Expande a 200px al pasar el mouse */
+}
+
+.expanded {
+    width: 200px;
+}
+
+/* Contenedor principal donde van div4 */
+.parent2 { 
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    gap: 8px;
+    height: 100vh; /* Ocupar toda la pantalla */
+}
+
+.divS1 { 
+    grid-column: span 5; /* Ocupar las 5 columnas */
+    grid-row: 1; /* Estar en la primera fila */
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.divS2 { 
+    grid-column: span 5; /* Ocupar las 5 columnas */
+    grid-row: 2 / span 6; /* Empezar en la segunda fila y ocupar las siguientes 6 */
+    background-color: lightcoral;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+}

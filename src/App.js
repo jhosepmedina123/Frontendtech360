@@ -5,14 +5,15 @@ import Login from "./components/Login";
 import RegisterForm from "./components/RegisterForm";
 import RecoverPassword from "./components/RecoverPassword";
 import NewPassword from "./components/NewPassword";
-import Tech from "./components/Tech360";
-import Seguimiento from "./components/Seguimiento";
-import Calendario from "./components/Calendario";
-import Ajustes from "./components/Ajustes";
-import Clientes from "./components/Clientes";
-import DetallesP from "./components/DetallesP";
-import Operarios from "./components/Operarios";
-import Pedidos from "./components/Pedidos";
+import Tech from "./components/Tech360/Tech360"; 
+import Seguimiento from "./components/Seguimiento/Seguimiento";
+import Calendario from "./components/Calendario/Calendario";
+import Ajustes from "./components/Ajustes/Ajustes";
+import Clientes from "./components/Clientes/Clientes";
+import DetallesP from "./components/DetallesPedido/DetallesP";
+import Operarios from "./components/Operarios/Operarios";
+import Pedidos from "./components/Pedidos/Pedidos";
+import Sidebar from "./components/Sidebar/Sidebar";
 
 const App = () => {
   return (
@@ -23,7 +24,8 @@ const App = () => {
         <Route path="/register" element={<RegisterForm />} />
         <Route path="/recover-password" element={<RecoverPassword />} />
         <Route path="/new-password" element={<NewPassword />} />
-        <Route path="/tech360" element={<Tech />} />
+        <Route path="/sidebar" element={<Sidebar/>}/>
+        <Route path="/tech360" element={<Tech />} /> 
         <Route path="/seguimiento" element={<Seguimiento />} />
         <Route path="/calendario" element={<Calendario />} />
         <Route path="/ajustes" element={<Ajustes />} />

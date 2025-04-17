@@ -1,0 +1,78 @@
+/* Sidebar.module.css */
+
+/* Estilo de la barra lateral */
+.sidebar {
+  width: 80px; /* Por defecto, el tamaño pequeño de la barra lateral */
+  height: 100vh;
+  color: #000000; /* Texto blanco */
+  display: flex;
+  background: #EEF6FBE5;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  transition: width 0.3s ease; /* Animación suave para la expansión */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  border-color: #000000;
+  border: 1px solid #d1d1d1; /* Borde gris suave */
+}
+
+/* Estilo para cuando la barra lateral está expandida */
+.sidebar.expanded {
+  width: 10rem; /* Tamaño más grande cuando está expandida */
+}
+
+/* Logo */
+.logoContainer {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 1.875 rem; /* Espaciado abajo del logo */
+}
+
+.logo {
+  width: 60%;
+  max-width: 6.25rem;
+  height: auto;
+}
+
+/* Botones */
+.button {
+  background: none;
+  border: 1px solid #000000; /* Bordes visibles siempre en color amarillo */
+  border-radius: 20px; /* Bordes redondeados */
+  color: #000000;
+  font-size: 1.125rem;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 10px 20px;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s; /* Animaciones suaves */
+  margin-bottom: 10px; /* Añade espacio entre los botones */
+}
+
+/* Hover para los botones */
+.button:hover {
+  background: #dff0fae5; /* Color más claro al pasar el mouse */
+  color: #ffffff; /* Cambia el color del icono y el texto */
+}
+
+/* Estilo cuando la barra lateral está expandida */
+.button span {
+  margin-left: 10px;
+  font-size: 0.75rem;
+  display: none;
+}
+
+/* Mostrar texto cuando la barra lateral está expandida */
+.sidebar.expanded .button span {
+  display: inline-block;
+}
+
+/* Espaciado entre los botones */
+.button + .button {
+  margin-top: 0.625 rem;
+}

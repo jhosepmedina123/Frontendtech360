@@ -1,0 +1,69 @@
+.body {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+/* Sidebar a la izquierda y el content al lado derecho */
+.content {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  gap: 8px;
+  padding: 20px;
+  background-color: #F6FAFDE5;
+  height: 100%;
+  overflow: auto;
+  margin-left: 80px; 
+}
+
+/* ENCABEZADO */
+.div2 {
+  grid-column: 1 / span 7; /* Empieza en columna 2 */
+  background-color: #F6FAFDE5;
+  margin-right: -10px;
+}
+
+.div3 {
+  grid-column: 1 / span 2;
+  grid-row: 2 / span 4;
+  background: #EEF6FBE5;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.div4 {
+  grid-column: 1 / span 2;
+  grid-row: 6 / span 2;
+  background-color: #FFFFFF;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.div5 {
+  grid-column: 3 / span 5;
+  grid-row: 2 / span 4;
+  background-color: #FFFFFF;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.div6 {
+  grid-column: 3 / span 5;
+  grid-row: 6 / span 3;
+  background-color: #FFFFFF;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.div7 {
+  grid-column: 8 / span 3;
+  grid-row: 1 / span 8;
+  background: #EEF6FBE5;
+
+}
+
+.div3, .div4, .div5, .div6 {
+  border: 1px solid #d1d1d1; /* Borde gris suave */
+}

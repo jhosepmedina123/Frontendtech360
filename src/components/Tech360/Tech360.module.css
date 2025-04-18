@@ -20,82 +20,10 @@
 
 /* ENCABEZADO */
 .div2 {
-  grid-column: 1 / span 7; /* Empieza en columna 2 */
+  grid-column: 1 / span 7;
   background-color: #F6FAFDE5;
   margin-right: -10px;
 }
-
-.Status {
-  grid-column: 1 / span 2;
-  grid-row: 2 / span 4;
-  background: linear-gradient(to bottom right, #e6f7fe, #ffffff);
-  padding: 1rem;
-  border-radius: 12px;
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-  overflow: auto;
-  font-size: 0.75rem;
-}
-
-
-.statusHeader {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-weight: bold;
-  font-size: 0.85rem;
-}
-
-.statusDot {
-  width: 0.625rem;
-  height: 0.625rem;
-  background-color: #5C4DFF;
-  border-radius: 50%;
-}
-
-.userInfo {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-}
-
-.avatar {
-  width: 2.188rem;
-  height: 2.188rem;
-  background-color: #ccc;
-  border-radius: 50%;
-}
-
-.deliveryInfo,
-.addressInfo,
-.priceInfo {
-  font-size: 0.8rem;
-  line-height: 1.2rem;
-}
-
-.neighborhood {
-  font-weight: bold;
-  color: #5C4DFF;
-}
-
-.detailsButton {
-  margin-top: auto;
-  padding: 0.5rem 1rem;
-  background-color: #5C4DFF;
-  color: white;
-  border: none;
-  border-radius: 9999px;
-  cursor: pointer;
-  font-size: 0.8rem;
-  font-weight: 600;
-  transition: background-color 0.2s;
-}
-
-.detailsButton:hover {
-  background-color: #483bd1;
-}
-
 
 .div4 {
   grid-column: 1 / span 2;
@@ -120,14 +48,13 @@
   padding: 20px;
   border-radius: 12px;
 }
-
-.div7 {
+.div7{
   grid-column: 8 / span 3;
   grid-row: 1 / span 8;
   background: #EEF6FBE5;
-
+  border: 1px solid #d1d1d1;
 }
 
-.Status, .div4, .div5, .div6 {
-  border: 1px solid #d1d1d1; /* Borde gris suave */
+.div4, .div5, .div6 {
+  border: 1px solid #d1d1d1;
 }

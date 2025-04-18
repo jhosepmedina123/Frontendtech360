@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styles from "./Status.module.css";  // Asegúrate de tener el archivo de estilos para este componente
+import styles from "./Status.module.css";
 
 const Status = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
